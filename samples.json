@@ -1,0 +1,215 @@
+[
+  {
+    "candidate": "M01",
+    "title": "回去谈何容易",
+    "direction": "男→男",
+    "dataset": "OpenSinger",
+    "recordings": [
+      {
+        "model": "source",
+        "title": "源歌声",
+        "mode": "Source · 原唱",
+        "file": "audio/M01/source.wav",
+        "seconds": 3.8196875,
+        "sha256": "1e6862d687cf7d2c7194c250700d21d85b7423d20c771c50d305a7f38ad440d2",
+        "bytes": 366734
+      },
+      {
+        "model": "reference",
+        "title": "目标参考",
+        "mode": "Reference · 目标歌声",
+        "file": "audio/M01/reference.wav",
+        "seconds": 2.9808125,
+        "sha256": "8fdc36ff01b7f91a301996d92c2fb804337c15eb789a7215bfaa19620a1fb0ed",
+        "bytes": 286202
+      },
+      {
+        "model": "FreeSVC",
+        "title": "FreeSVC",
+        "mode": "整句离线 · 未额外移调",
+        "file": "audio/M01/FreeSVC.wav",
+        "seconds": 3.8133333333333335,
+        "sha256": "b2a2282c32cf6fd31b80c5aead970107161298c831463ab613373a8a6360d08f",
+        "bytes": 183084
+      },
+      {
+        "model": "OpenVoice",
+        "title": "OpenVoice v2",
+        "mode": "整句离线 · 未额外移调",
+        "file": "audio/M01/OpenVoice.wav",
+        "seconds": 3.81968253968254,
+        "sha256": "6e80df73174a68b7e815e1eadff372c1ea6023f5cfa8c9e52b9ff6e054b702d9",
+        "bytes": 168492
+      },
+      {
+        "model": "SeedVC",
+        "title": "Seed-VC · 自定义流式适配",
+        "mode": "44.1kHz 歌声模型 · 320ms / 3步 · 未额外移调",
+        "file": "audio/M01/SeedVC.wav",
+        "seconds": 3.81968253968254,
+        "sha256": "ab38c733564ecd88e6cffa19e8b72891df1765bfd18f29d641a0bd0060388021",
+        "bytes": 336940
+      },
+      {
+        "model": "midi",
+        "title": "带 MIDI 方案",
+        "mode": "流式 · 自动音区对齐",
+        "file": "audio/M01/midi.wav",
+        "seconds": 3.8186666666666667,
+        "sha256": "201708d0b296fbd2034596a79ce56a6e3b7bb94912570bdabca5a134b7150868",
+        "bytes": 366636
+      },
+      {
+        "model": "joint",
+        "title": "本文无 MIDI 方案",
+        "mode": "流式 · 自动音区对齐",
+        "file": "audio/M01/joint.wav",
+        "seconds": 3.8186666666666667,
+        "sha256": "bc7a764d420698fc35f712ff826339fc58790ae96a05a06dcb89966073447d6a",
+        "bytes": 366636
+      }
+    ]
+  },
+  {
+    "candidate": "M19",
+    "title": "你留给我的迷离扑朔岁月风干我的执着我还是把回忆",
+    "direction": "男→女",
+    "dataset": "GTSinger-Chinese",
+    "recordings": [
+      {
+        "model": "source",
+        "title": "源歌声",
+        "mode": "Source · 原唱",
+        "file": "audio/M19/source.wav",
+        "seconds": 6.65,
+        "sha256": "3baf8ddf4720cfd7a2aea5b50a34404a5f15310dceb6be9567cb1c44050bf7e0",
+        "bytes": 957644
+      },
+      {
+        "model": "reference",
+        "title": "目标参考",
+        "mode": "Reference · 目标歌声",
+        "file": "audio/M19/reference.wav",
+        "seconds": 7.97,
+        "sha256": "b3e542d0de97b41ecdde5af3ceb781e2037d3cc02e7a1e4ff37f9b1cc6597fe6",
+        "bytes": 1147724
+      },
+      {
+        "model": "FreeSVC",
+        "title": "FreeSVC",
+        "mode": "整句离线 · 未额外移调",
+        "file": "audio/M19/FreeSVC.wav",
+        "seconds": 6.653333333333333,
+        "sha256": "9bf0b08166b7beb1bd7eaf611f020352c82c3a65c0d7fe8ee5717b3359eba576",
+        "bytes": 319404
+      },
+      {
+        "model": "OpenVoice",
+        "title": "OpenVoice v2",
+        "mode": "整句离线 · 未额外移调",
+        "file": "audio/M19/OpenVoice.wav",
+        "seconds": 6.640907029478458,
+        "sha256": "cadfde2d983f0efa0227007324b1f5164e4412ee7bbecdf6d090a28bacb25db6",
+        "bytes": 292908
+      },
+      {
+        "model": "SeedVC",
+        "title": "Seed-VC · 自定义流式适配",
+        "mode": "44.1kHz 歌声模型 · 320ms / 3步 · 未额外移调",
+        "file": "audio/M19/SeedVC.wav",
+        "seconds": 6.65,
+        "sha256": "598c1558f2276445bd13e768cfdf1fdfb7c59ad8dfe27f0f28b1af2093a27c14",
+        "bytes": 586574
+      },
+      {
+        "model": "midi",
+        "title": "带 MIDI 方案",
+        "mode": "流式 · 自动音区对齐",
+        "file": "audio/M19/midi.wav",
+        "seconds": 6.650666666666667,
+        "sha256": "def54be709c371847851b5d8bcdda2a70b3c7c6463eb0ccd5be9c0ac9a93db7a",
+        "bytes": 638508
+      },
+      {
+        "model": "joint",
+        "title": "本文无 MIDI 方案",
+        "mode": "流式 · 自动音区对齐",
+        "file": "audio/M19/joint.wav",
+        "seconds": 6.650666666666667,
+        "sha256": "6b5139ce81c74e86833410b544692aabcbbf36a353de0ac0cf266c540744e227",
+        "bytes": 638508
+      }
+    ]
+  },
+  {
+    "candidate": "M37",
+    "title": "不论天晴或下雨陪着你悲伤欢喜",
+    "direction": "女→男",
+    "dataset": "M4Singer",
+    "recordings": [
+      {
+        "model": "source",
+        "title": "源歌声",
+        "mode": "Source · 原唱",
+        "file": "audio/M37/source.wav",
+        "seconds": 7.78,
+        "sha256": "bd3525dbedd088820a8e70e12ebda872728229ed4b3abf44c00d8bf7a555ea52",
+        "bytes": 746958
+      },
+      {
+        "model": "reference",
+        "title": "目标参考",
+        "mode": "Reference · 目标歌声",
+        "file": "audio/M37/reference.wav",
+        "seconds": 6.505020833333333,
+        "sha256": "9734b6432e7100e03404f03c626b871f8d96d976d27fa070bc300a45f4d7b32d",
+        "bytes": 624560
+      },
+      {
+        "model": "FreeSVC",
+        "title": "FreeSVC",
+        "mode": "整句离线 · 未额外移调",
+        "file": "audio/M37/FreeSVC.wav",
+        "seconds": 7.786666666666667,
+        "sha256": "48b2d43c5525f2c5b33d2ef16ec369247eeafeb8f55331a5d28a4f0bdd2188ee",
+        "bytes": 373804
+      },
+      {
+        "model": "OpenVoice",
+        "title": "OpenVoice v2",
+        "mode": "整句离线 · 未额外移调",
+        "file": "audio/M37/OpenVoice.wav",
+        "seconds": 7.778684807256236,
+        "sha256": "05e3080fefc8c5ded79e139c2461c3a1227ba65db1d7ea0c2ab6569c68cc61b2",
+        "bytes": 343084
+      },
+      {
+        "model": "SeedVC",
+        "title": "Seed-VC · 自定义流式适配",
+        "mode": "44.1kHz 歌声模型 · 320ms / 3步 · 未额外移调",
+        "file": "audio/M37/SeedVC.wav",
+        "seconds": 7.78,
+        "sha256": "c57cd1f2d0847719ed0d0b14e7299ee99005dcba584f507ebeb42bba0f86e925",
+        "bytes": 686240
+      },
+      {
+        "model": "midi",
+        "title": "带 MIDI 方案",
+        "mode": "流式 · 自动音区对齐",
+        "file": "audio/M37/midi.wav",
+        "seconds": 7.781333333333333,
+        "sha256": "4c5aa85b5ea44ef311a5aaaa1db4d5e61d5ff2c52fb3b575de4a4d659409a23d",
+        "bytes": 747052
+      },
+      {
+        "model": "joint",
+        "title": "本文无 MIDI 方案",
+        "mode": "流式 · 自动音区对齐",
+        "file": "audio/M37/joint.wav",
+        "seconds": 7.781333333333333,
+        "sha256": "bc1eaea949c2a95865b100bc5e57d5abc5e52e2f054d5f5bbecf79db02cb2887",
+        "bytes": 747052
+      }
+    ]
+  }
+]

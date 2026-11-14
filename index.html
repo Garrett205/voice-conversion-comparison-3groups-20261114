@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="三组歌声转换试听：原唱、目标参考及五种方法。"><title>三组歌声转换 · 对照试听</title>
+<style>
+:root{color-scheme:light;--ink:#152b37;--muted:#58707d;--line:#dce6e8;--accent:#117a72}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f3f6f5;color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+main{max-width:1120px;margin:auto;padding:46px 24px 64px}header{padding:4px 0 28px}.eyebrow{font-size:13px;font-weight:650;letter-spacing:.04em;color:var(--accent);margin:0 0 6px}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.25;letter-spacing:-.03em;margin:12px 0 16px}header p{margin:8px 0;color:var(--muted);max-width:860px}.notice{border-left:3px solid var(--accent);padding:10px 16px;background:#e8f1ee;border-radius:0 10px 10px 0;color:#294d46;font-size:14px}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}nav a,button{font:inherit;font-size:14px;border:1px solid #cbdad9;border-radius:9px;padding:8px 14px;background:white;color:var(--ink);text-decoration:none;cursor:pointer}nav a:hover,button:hover{background:#e9f3ef}button{margin-left:auto}
+.group{scroll-margin-top:20px;margin:26px 0;background:white;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 5px 20px #102d3410}.group-heading{display:flex;gap:15px;align-items:flex-start;margin-bottom:22px}.number{background:#e7f2ed;color:#10645c;border-radius:12px;min-width:60px;text-align:center;padding:13px 8px;font-size:18px;font-weight:750}h2{font-size:21px;line-height:1.5;margin:0;font-weight:650}.inputs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}.methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;border-top:1px solid var(--line);padding-top:18px}.track{min-width:0;padding:16px;border:1px solid var(--line);border-radius:12px;background:#fcfdfd}.source,.reference{background:#f4f7f8}.joint{border-color:#8bbcb2;background:#f1f9f5}.track-top{display:flex;gap:10px;justify-content:space-between;align-items:baseline}.track-title{font-weight:650;font-size:15px}.duration{white-space:nowrap;font-size:12px;color:var(--muted)}.mode{margin:5px 0 12px;font-size:12px;color:var(--muted);min-height:20px}audio{display:block;width:100%;height:42px}.download{display:inline-block;margin-top:8px;font-size:12px;text-decoration:none;color:var(--accent)}footer{font-size:13px;color:var(--muted)}footer a{color:var(--accent)}
+@media(max-width:640px){main{padding:25px 14px 40px}.group{padding:17px 14px;border-radius:14px}.inputs,.methods{grid-template-columns:1fr}.group-heading{gap:10px}h2{font-size:18px}.number{min-width:51px;font-size:16px}button{margin-left:0}.track{padding:13px}}
+</style></head><body><main><header><p class="eyebrow">SCI4 · 2026.11.14 · 3 组 / 21 条音频</p>
+<h1>歌声转换，对照试听。</h1><p>每组先听源歌声与目标参考，再比较五种方案。播放一条时，其他音频会自动暂停。</p>
+<p class="notice">Seed-VC 使用当前的 <strong>44.1kHz 歌声模型自定义流式适配</strong>，并非官方原生实时版本。FreeSVC 与 OpenVoice v2 为整句离线；两种本文方案使用自动音区对齐。</p>
+<nav aria-label="试听组导航"><a href="#M01">M01 · 男→男</a><a href="#M19">M19 · 男→女</a><a href="#M37">M37 · 女→男</a><button id="pause-all" type="button">暂停全部</button></nav></header>
+<section id="M01" class="group">
+<div class="group-heading"><span class="number">M01</span><div><p class="eyebrow">男→男 · OpenSinger</p><h2>回去谈何容易</h2></div></div>
+<div class="inputs"><div class="track source">
+<div class="track-top"><span class="track-title">源歌声</span><span class="duration">3.82s</span></div>
+<p class="mode">Source · 原唱</p>
+<audio controls preload="metadata" aria-label="M01 源歌声"><source src="audio/M01/source.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M01/source.wav" download>下载 WAV</a></div><div class="track reference">
+<div class="track-top"><span class="track-title">目标参考</span><span class="duration">2.98s</span></div>
+<p class="mode">Reference · 目标歌声</p>
+<audio controls preload="metadata" aria-label="M01 目标参考"><source src="audio/M01/reference.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M01/reference.wav" download>下载 WAV</a></div></div><div class="methods"><div class="track FreeSVC">
+<div class="track-top"><span class="track-title">FreeSVC</span><span class="duration">3.81s</span></div>
+<p class="mode">整句离线 · 未额外移调</p>
+<audio controls preload="metadata" aria-label="M01 FreeSVC"><source src="audio/M01/FreeSVC.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M01/FreeSVC.wav" download>下载 WAV</a></div><div class="track OpenVoice">
+<div class="track-top"><span class="track-title">OpenVoice v2</span><span class="duration">3.82s</span></div>
+<p class="mode">整句离线 · 未额外移调</p>
+<audio controls preload="metadata" aria-label="M01 OpenVoice v2"><source src="audio/M01/OpenVoice.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M01/OpenVoice.wav" download>下载 WAV</a></div><div class="track SeedVC">
+<div class="track-top"><span class="track-title">Seed-VC · 自定义流式适配</span><span class="duration">3.82s</span></div>
+<p class="mode">44.1kHz 歌声模型 · 320ms / 3步 · 未额外移调</p>
+<audio controls preload="metadata" aria-label="M01 Seed-VC · 自定义流式适配"><source src="audio/M01/SeedVC.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M01/SeedVC.wav" download>下载 WAV</a></div><div class="track midi">
+<div class="track-top"><span class="track-title">带 MIDI 方案</span><span class="duration">3.82s</span></div>
+<p class="mode">流式 · 自动音区对齐</p>
+<audio controls preload="metadata" aria-label="M01 带 MIDI 方案"><source src="audio/M01/midi.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M01/midi.wav" download>下载 WAV</a></div><div class="track joint">
+<div class="track-top"><span class="track-title">本文无 MIDI 方案</span><span class="duration">3.82s</span></div>
+<p class="mode">流式 · 自动音区对齐</p>
+<audio controls preload="metadata" aria-label="M01 本文无 MIDI 方案"><source src="audio/M01/joint.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M01/joint.wav" download>下载 WAV</a></div></div></section><section id="M19" class="group">
+<div class="group-heading"><span class="number">M19</span><div><p class="eyebrow">男→女 · GTSinger-Chinese</p><h2>你留给我的迷离扑朔岁月风干我的执着我还是把回忆</h2></div></div>
+<div class="inputs"><div class="track source">
+<div class="track-top"><span class="track-title">源歌声</span><span class="duration">6.65s</span></div>
+<p class="mode">Source · 原唱</p>
+<audio controls preload="metadata" aria-label="M19 源歌声"><source src="audio/M19/source.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M19/source.wav" download>下载 WAV</a></div><div class="track reference">
+<div class="track-top"><span class="track-title">目标参考</span><span class="duration">7.97s</span></div>
+<p class="mode">Reference · 目标歌声</p>
+<audio controls preload="metadata" aria-label="M19 目标参考"><source src="audio/M19/reference.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M19/reference.wav" download>下载 WAV</a></div></div><div class="methods"><div class="track FreeSVC">
+<div class="track-top"><span class="track-title">FreeSVC</span><span class="duration">6.65s</span></div>
+<p class="mode">整句离线 · 未额外移调</p>
+<audio controls preload="metadata" aria-label="M19 FreeSVC"><source src="audio/M19/FreeSVC.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M19/FreeSVC.wav" download>下载 WAV</a></div><div class="track OpenVoice">
+<div class="track-top"><span class="track-title">OpenVoice v2</span><span class="duration">6.64s</span></div>
+<p class="mode">整句离线 · 未额外移调</p>
+<audio controls preload="metadata" aria-label="M19 OpenVoice v2"><source src="audio/M19/OpenVoice.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M19/OpenVoice.wav" download>下载 WAV</a></div><div class="track SeedVC">
+<div class="track-top"><span class="track-title">Seed-VC · 自定义流式适配</span><span class="duration">6.65s</span></div>
+<p class="mode">44.1kHz 歌声模型 · 320ms / 3步 · 未额外移调</p>
+<audio controls preload="metadata" aria-label="M19 Seed-VC · 自定义流式适配"><source src="audio/M19/SeedVC.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M19/SeedVC.wav" download>下载 WAV</a></div><div class="track midi">
+<div class="track-top"><span class="track-title">带 MIDI 方案</span><span class="duration">6.65s</span></div>
+<p class="mode">流式 · 自动音区对齐</p>
+<audio controls preload="metadata" aria-label="M19 带 MIDI 方案"><source src="audio/M19/midi.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M19/midi.wav" download>下载 WAV</a></div><div class="track joint">
+<div class="track-top"><span class="track-title">本文无 MIDI 方案</span><span class="duration">6.65s</span></div>
+<p class="mode">流式 · 自动音区对齐</p>
+<audio controls preload="metadata" aria-label="M19 本文无 MIDI 方案"><source src="audio/M19/joint.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M19/joint.wav" download>下载 WAV</a></div></div></section><section id="M37" class="group">
+<div class="group-heading"><span class="number">M37</span><div><p class="eyebrow">女→男 · M4Singer</p><h2>不论天晴或下雨陪着你悲伤欢喜</h2></div></div>
+<div class="inputs"><div class="track source">
+<div class="track-top"><span class="track-title">源歌声</span><span class="duration">7.78s</span></div>
+<p class="mode">Source · 原唱</p>
+<audio controls preload="metadata" aria-label="M37 源歌声"><source src="audio/M37/source.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M37/source.wav" download>下载 WAV</a></div><div class="track reference">
+<div class="track-top"><span class="track-title">目标参考</span><span class="duration">6.51s</span></div>
+<p class="mode">Reference · 目标歌声</p>
+<audio controls preload="metadata" aria-label="M37 目标参考"><source src="audio/M37/reference.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M37/reference.wav" download>下载 WAV</a></div></div><div class="methods"><div class="track FreeSVC">
+<div class="track-top"><span class="track-title">FreeSVC</span><span class="duration">7.79s</span></div>
+<p class="mode">整句离线 · 未额外移调</p>
+<audio controls preload="metadata" aria-label="M37 FreeSVC"><source src="audio/M37/FreeSVC.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M37/FreeSVC.wav" download>下载 WAV</a></div><div class="track OpenVoice">
+<div class="track-top"><span class="track-title">OpenVoice v2</span><span class="duration">7.78s</span></div>
+<p class="mode">整句离线 · 未额外移调</p>
+<audio controls preload="metadata" aria-label="M37 OpenVoice v2"><source src="audio/M37/OpenVoice.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M37/OpenVoice.wav" download>下载 WAV</a></div><div class="track SeedVC">
+<div class="track-top"><span class="track-title">Seed-VC · 自定义流式适配</span><span class="duration">7.78s</span></div>
+<p class="mode">44.1kHz 歌声模型 · 320ms / 3步 · 未额外移调</p>
+<audio controls preload="metadata" aria-label="M37 Seed-VC · 自定义流式适配"><source src="audio/M37/SeedVC.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M37/SeedVC.wav" download>下载 WAV</a></div><div class="track midi">
+<div class="track-top"><span class="track-title">带 MIDI 方案</span><span class="duration">7.78s</span></div>
+<p class="mode">流式 · 自动音区对齐</p>
+<audio controls preload="metadata" aria-label="M37 带 MIDI 方案"><source src="audio/M37/midi.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M37/midi.wav" download>下载 WAV</a></div><div class="track joint">
+<div class="track-top"><span class="track-title">本文无 MIDI 方案</span><span class="duration">7.78s</span></div>
+<p class="mode">流式 · 自动音区对齐</p>
+<audio controls preload="metadata" aria-label="M37 本文无 MIDI 方案"><source src="audio/M37/joint.wav" type="audio/wav"></audio>
+<a class="download" href="audio/M37/joint.wav" download>下载 WAV</a></div></div></section>
+<footer><p>从现有 75 组候选中，按编号取男→男、男→女、女→男各一组；未按模型分数筛选。音频沿用现有完整文件，未经本次剪裁、转码或音量处理。本页用于试听核对，未收集人工 MOS / SMOS 评分。</p>
+<a href="https://github.com/Garrett205/voice-conversion-comparison-3groups-20261114">GitHub 仓库</a> · <a href="samples.json">音频清单</a></footer></main>
+<script>const players=[...document.querySelectorAll('audio')];players.forEach(player=>player.addEventListener('play',()=>players.forEach(other=>{if(other!==player)other.pause()})));document.getElementById('pause-all').addEventListener('click',()=>players.forEach(player=>player.pause()));</script>
+</body></html>
